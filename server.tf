@@ -4,7 +4,7 @@ region = "ap-south-1"
 resource "aws_instance" "myawsserver" {
   ami = "ami-041d6256ed0f2061c"
   instance_type = "t2.micro"
-  key_name = "New-Key"
+  key_name = "r-import"
 
   tags = {
     Name = "Rajiv-devops-ec2-instance"

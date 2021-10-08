@@ -1,13 +1,13 @@
 provider "aws" {
-region = "us-east-2"
+region = "ap-south-1"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-077e31c4939f6a2f3"
+  ami = "ami-041d6256ed0f2061c"
   instance_type = "t2.micro"
-  key_name = "gagan-import"
+  key_name = "New-Key"
 
   tags = {
-    Name = "Gagan-devops-ec2-instance"
+    Name = "Rajiv-devops-ec2-instance"
     env = "dev"
   }
   provisioner "local-exec" {
